@@ -1,7 +1,8 @@
 # engfmt
 
-Here is a simple library for converting ASCII floating point numbers into
-"engineering format"- so that the exponent is a multiple of 3.
+Here is a simple library for converting ASCII floating point numbers
+(perhaps the result from sprintf) into "engineering format"- so that the
+exponent is a multiple of 3.
 
 Also included is a function to insert commas between every three digits.
 
@@ -9,20 +10,20 @@ Also included is a function to insert commas between every three digits.
 
     extern char *engfmt(char *d, size_t d_len, const char *s);
 
-	's' is pointer to zero-terimnated floating point number.
+	's' is pointer to a zero-terimnated ASCII floating point number.
 
-	'd'/'d_len' containt pointer and size of a buffer where to to write
-	the result.
+	'd'/'d_len' contains pointer and size of a buffer for the result.
 
 	Returns 'd'.
 
     extern char *insert_commas(char *dst, const char *src, char sep);
 
-	'src' is pointer to ASCII floating pointer number
+	'src' is pointer to zero-terminated ASCII decimal or floating
+	pointer number.
 
 	'dst' is pointer to a buffer.
 
-	Return 'dst'.
+	Returns 'dst'.
 
 ## Try it
 
