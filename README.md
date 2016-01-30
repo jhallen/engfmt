@@ -23,6 +23,8 @@ Also included is a function to insert commas between every three digits.
 
 	'dst' is pointer to a buffer.
 
+	'sep' is separator character to insert, typically ',' or '_'.
+
 	Returns 'dst'.
 
 ## Try it
