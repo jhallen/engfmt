@@ -1,8 +1,12 @@
+/* Functions for printing floating point numbers:
+ *   engfmt: print in engineering format
+ *   insert_commas: insert commas every three digits
+ *
+ * - Joe Allen
+ */
+
 #include <stdio.h>
-#include <string.h>
 #include <assert.h>
-#include <stdlib.h>
-#include <unistd.h>
 #include "engfmt.h"
 
 /* Copy b into buffer a of length len.  A will always end up NUL terminated. */
